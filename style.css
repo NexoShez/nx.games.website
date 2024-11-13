@@ -75,12 +75,21 @@ div.games {
     width: 100%;
     overflow: auto;
     display: inline-block;
-    padding-left: 2.5%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
     padding-right: 2.5%;
 }
 div.games div {
     width: 30%;
-    float: left;
+    display: inline-block;
+    align-items: center;
+}
+
+
+a.meowtitlebtn img:hover {
+    opacity: 0.5; 
+}
+
+a.meowtitlebtn img {
+    opacity: 1;
 }
