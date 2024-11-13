@@ -70,6 +70,28 @@ div a.active {
     text-decoration: wavy;
 }
 
+.show {display: block;}
+
+button.glibdbtn {
+    float: right;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+button.glibdbtn:hover {
+    background-color: plum;
+    color: black;
+    text-decoration: none;
+}
+button.glibdbtnact {
+    background-color: pink;
+    color: black;
+    text-decoration: wavy;
+}
+
 div.games {
     background-color: beige;
     width: 100%;
