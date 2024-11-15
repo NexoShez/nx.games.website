@@ -9,6 +9,9 @@ header {
     font-size: 60px;
     font-family: 'Renogare';
     background-color: white;
+    width: fit-content;
+    padding: 1%;
+    margin: 0.5%;
 }
 
 h2 {
@@ -17,6 +20,24 @@ h2 {
 h4 {
     font-family: 'Montserrat';
     font-weight: 700;
+}
+
+body.set2 {
+    background-color: plum;
+    background-image: none;
+}
+
+
+body.main {
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-image: url('images/newbg.png');
+}
+
+body.games {
+    background-color: rgb(0, 0, 0);
+    background-size: cover;
+    background-image: url('images/nxgames.png');
 }
 
 fieldset {
@@ -72,24 +93,76 @@ div a.active {
 
 .show {display: block;}
 
-button.glibdbtn {
+.glibdbtn {
+    position: relative;
     float: right;
     background-color: rgb(255, 255, 255);
     font-family: 'Montserrat';
     font-weight: 600;
     text-align: center;
     padding: 14px 16px;
+    border: none;
+    outline: none;
+    margin: 0;
     text-decoration: none;
+    cursor: pointer;
 }
-button.glibdbtn:hover {
+.glibdbtn:hover {
     background-color: plum;
     color: black;
     text-decoration: none;
 }
-button.glibdbtnact {
+.glibdbtnact {
     background-color: pink;
     color: black;
     text-decoration: wavy;
+}
+.glibddcont {
+    /* display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; */
+    
+    z-index: 1;
+    /* overflow: auto; */
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 16px;
+    min-width: 160px;
+    text-decoration: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    position: absolute;
+}
+
+.glibddcont a {
+    float: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+div.glibdropdown {
+    position: relative;
+    overflow: hidden;
+    float: right;
+}
+
+div.glibdropdown:hover .glibddcont {
+    display: block;
+}
+
+div.glibdropdown:hover .glibdbtn {
+    background-color: plum;
 }
 
 div.games {
@@ -97,16 +170,54 @@ div.games {
     width: 100%;
     overflow: auto;
     display: inline-block;
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-    padding-right: 2.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 div.games div {
     width: 30%;
     display: inline-block;
     align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin: 1%;
 }
 
+div.devs {
+    background-color: rgba(0,0,0,0);
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    flex-direction: row;
+}
+div.devs div {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    margin: 1.5%;
+    border-radius: 16px;
+}
+
+div.devs div p {
+    font-family: 'Montserrat';
+    text-align: center;
+    width: auto;
+}
+
+div a.normal {
+    align-self: center;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    width: fit-content;
+    text-decoration: none;
+    float: none;
+}
 
 a.meowtitlebtn img:hover {
     opacity: 0.5; 
@@ -114,4 +225,14 @@ a.meowtitlebtn img:hover {
 
 a.meowtitlebtn img {
     opacity: 1;
+}
+
+footer p {
+    padding-left: 15px;
+    width: auto;
+}
+
+p {
+    width: fit-content;
+    padding: 1.5%;
 }
